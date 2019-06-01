@@ -15,7 +15,7 @@ go get github.com/mattn/go-sqlite3
 ### How to Run
 
 ## export binpath for binary target
-export GOBIN=<projectpath>/bin
+export GOBIN=\<projectpath\>/bin
 ## load the json data into sqlite file
 ./loadDataIntoSqlite -f <inputfile in json format>
 ## start TCP server
@@ -24,7 +24,7 @@ export GOBIN=<projectpath>/bin
 ./show_avg_marks -studentids <studentids>
 
 # Example
-cd into <projectpath>/bin folder
+cd into \<projectpath\>/bin folder
 ./loadDataIntoSqlite -f ../inputfiles/student_marks.json
 ./server
 in another terminal
