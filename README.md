@@ -32,9 +32,9 @@ in another terminal
 ./show_avg_marks -studentids 456,567,3456,1267
 
 Output Format:
-* Avg Marks of 456: 55.33
-* Avg Marks of 567: 52.67
-* Avg Marks of 3456: 34.67
-* Avg Marks of 126: 65.67
+ Avg Marks of 456: 55.33
+ Avg Marks of 567: 52.67
+ Avg Marks of 3456: 34.67
+ Avg Marks of 126: 65.67
 
 
