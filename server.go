@@ -27,6 +27,7 @@ func getAvgMarks(querystmt *sql.Stmt, uid string) (float32, error) {
 	if cache.Get(uid) == nil {
 		// load data from db
 		// put data in cache
+		log.Println("cache miss for:", uid)
 		studentMarks := new(commons.MarksStudent)
 
 		fmt.Println(uid)
@@ -73,7 +74,7 @@ func handleRequest(querystmt *sql.Stmt, conn net.Conn) {
 		conn.Close()
 		return
 	}
-	uidStr := string(buf[:n-1])
+	uidStr := string(buf[:n])
 	if strings.Trim(uidStr, " ") == "" {
 		fmt.Println("uid cannot be empty")
 		conn.Close()

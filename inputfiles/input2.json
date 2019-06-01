@@ -1,0 +1,9 @@
+[
+ {   "name": "abc",   "uid": 1432,   "physics": 10,   "chemistry": 78,   "maths": 94 },
+ {   "name": "Dorothy",   "uid": 1654,   "physics": 15,   "chemistry": 91,   "maths": 93 },
+ {   "name": "Carolyn",   "uid": 1763,   "physics": 17,   "chemistry": 19,   "maths": 7 },
+ {   "name": "Francis",   "uid": 1856,   "physics": 99,   "chemistry": 86,   "maths": 59 },
+ {   "name": "Carl",   "uid": 1965,   "physics": 8,   "chemistry": 46,   "maths": 82 },
+ {   "name": "Ruth",   "uid": 2019,   "physics": 82,   "chemistry": 84,   "maths": 16 },
+ {   "name": "Lulu",   "uid": 2164,   "physics": 25,   "chemistry": 46,   "maths": 14 }
+]

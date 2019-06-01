@@ -17,6 +17,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	fmt.Println(string([]byte(*studentids)))
 	conn.Write([]byte(*studentids))
 
 	var buf bytes.Buffer
