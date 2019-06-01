@@ -51,7 +51,7 @@ func (lc *LRUCache) Get(key string) interface{} {
 }
 
 func (lc *LRUCache) evictIfRequired() {
-	if int64(lc.dlist.Len()) > (lc.capacity + 1) {
+	if int64(lc.dlist.Len()) > (lc.capacity) {
 		lc.mutex.Lock()
 		delete(lc.hashMap, lc.dlist.Back().Value.(*CacheElement).Key)
 		lc.dlist.Remove(lc.dlist.Back())
@@ -81,4 +81,12 @@ func (lc *LRUCache) PrintCache() {
 		fmt.Println(nodeptr.Value.(*CacheElement).Value)
 		nodeptr = nodeptr.Next()
 	}
+}
+
+func (lc *LRUCache) GetDListLength() int {
+	return lc.dlist.Len()
+}
+
+func (lc *LRUCache) GetFrontElement() interface{} {
+	return lc.dlist.Front().Value.(*CacheElement).Key
 }
