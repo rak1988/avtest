@@ -26,7 +26,7 @@ export GOBIN=\<projectpath\>/bin
 ## Example
 
 cd into <projectpath>/bin folder
-./loadDataIntoSqlite -f ../inputfiles/student_marks.json
+./loadDataIntoSqlite -f \.\./inputfiles/student_marks.json
 ./server
 in another terminal
 ./show_avg_marks -studentids 456,567,3456,1267
